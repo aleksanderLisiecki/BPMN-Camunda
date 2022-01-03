@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="asdfsDfa" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="cenyTowarow" name="Ceny towarów">
+    <decisionTable id="DecisionTable_0xvbuf7">
+      <input id="Input_1" label="Produkty" biodi:width="192">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>wybranyProdukt</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Cena towaru" name="cenaTowaru" typeRef="integer" />
+      <rule id="DecisionRule_1xrw65m">
+        <inputEntry id="UnaryTests_1vqzw3l">
+          <text>"tShirt"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mamvtl">
+          <text>20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10heamk">
+        <inputEntry id="UnaryTests_1bypbdr">
+          <text>"polo"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kzmsd3">
+          <text>40</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xn2nby">
+        <inputEntry id="UnaryTests_0iyqknp">
+          <text>"jeans"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cdgt0e">
+          <text>150</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ifyvtx">
+        <inputEntry id="UnaryTests_0z0k1eh">
+          <text>"bluza"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1s9x7m9">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xifr5x">
+        <inputEntry id="UnaryTests_1n7sjvk">
+          <text>"buty"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0o7xkcb">
+          <text>200</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="cenyTowarow">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

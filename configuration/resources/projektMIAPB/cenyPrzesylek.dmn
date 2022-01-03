@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_0abr9p9" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="cenyPrzesylek" name="Ceny przesylek">
+    <decisionTable id="DecisionTable_0xvbuf7">
+      <input id="Input_1" label="Rodzaj dostawy">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>sposobDostawy</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Koszt przesylki" name="kosztPrzesylki" typeRef="integer" />
+      <rule id="DecisionRule_1xrw65m">
+        <inputEntry id="UnaryTests_1vqzw3l">
+          <text>"odbiorOsobisty"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mamvtl">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10heamk">
+        <inputEntry id="UnaryTests_1bypbdr">
+          <text>"paczkomat"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kzmsd3">
+          <text>10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xn2nby">
+        <inputEntry id="UnaryTests_0iyqknp">
+          <text>"kurier"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cdgt0e">
+          <text>14</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="cenyPrzesylek">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

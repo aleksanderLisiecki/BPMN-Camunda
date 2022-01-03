@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_0msz128" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="obliczanieRozmiaru" name="Obliczanie rozmiaru paczki">
+    <decisionTable id="DecisionTable_0xabmhr">
+      <input id="Input_1" label="Produkty">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>wybranyProdukt</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_06w5rsx" label="Liczba sztuk">
+        <inputExpression id="LiteralExpression_02rdhpl" typeRef="integer">
+          <text>liczbaSztuk</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Rozmiat paczki" name="rozmiarPaczki" typeRef="string" />
+      <rule id="DecisionRule_1isqezp">
+        <inputEntry id="UnaryTests_0omfbbg">
+          <text>"tShirt", "polo"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e4iiky">
+          <text>&lt;= 6</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xd4p7j">
+          <text>"small"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09xpw90">
+        <inputEntry id="UnaryTests_09kvu0e">
+          <text>"tShirt", "polo"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06jhrut">
+          <text>&gt; 6</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0o9se0s">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1alizrt">
+        <inputEntry id="UnaryTests_0brxmlm">
+          <text>"jeans", "bluza"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05h00bm">
+          <text>&lt;= 2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10fo4bd">
+          <text>"small"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02r0gwm">
+        <inputEntry id="UnaryTests_119e5h1">
+          <text>"jeans", "bluza"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1juvenc">
+          <text>[3..6]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16syiy3">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xj3mdf">
+        <inputEntry id="UnaryTests_0fxfqgi">
+          <text>"jeans", "bluza"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bt95wr">
+          <text>&gt; 6</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vwohzs">
+          <text>"large"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02u3yti">
+        <inputEntry id="UnaryTests_1xa890b">
+          <text>"buty"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15342ct">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1db7v21">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g1990w">
+        <inputEntry id="UnaryTests_1la76dp">
+          <text>"buty"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_088m8lf">
+          <text>&gt; 1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mavcio">
+          <text>"large"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="obliczanieRozmiaru">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

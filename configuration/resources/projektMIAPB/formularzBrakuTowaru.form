@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "### Niestety nie możemy zrealizować zamówienia.\n\nPrzepraszamy za niedogodności, ale chwilowo nie posiadamy zamówionego przez Ciebie towaru w magazynie.\n\nCzy chcesz ponownie złożyć zamówienie?",
+      "type": "text",
+      "id": "Field_09t6oh8"
+    },
+    {
+      "label": "Chcę ponownie złożyć zamówienie",
+      "type": "checkbox",
+      "id": "Field_0gghmqt",
+      "key": "zamowicPonownie"
+    },
+    {
+      "action": "submit",
+      "label": "Zatwierdź",
+      "type": "button",
+      "id": "Field_1q0x3m8",
+      "key": "field_1k85918"
+    }
+  ],
+  "type": "default",
+  "id": "formularzBrakuTowaru"
+}

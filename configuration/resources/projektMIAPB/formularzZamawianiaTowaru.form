@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "# Witamy w formularzu tworzenia zamówienia:\n\n### Proszę wybrać produkt oraz liczbę sztuk.\n\nDostępne produkty :\n* T-shirt - 20 zł,\n* Koszulka polo - 40 zł,\n* Spodnie jeansowe - 150 zł,\n* Bluza - 100 zł,\n* Buty - 200 zł.",
+      "type": "text",
+      "id": "Field_0gda2u9"
+    },
+    {
+      "values": [
+        {
+          "label": "T-shirt",
+          "value": "tShirt"
+        },
+        {
+          "label": "Koszulka polo",
+          "value": "polo"
+        },
+        {
+          "label": "Spodnie jeansowe",
+          "value": "jeans"
+        },
+        {
+          "label": "Bluza",
+          "value": "bluza"
+        },
+        {
+          "label": "Buty",
+          "value": "buty"
+        }
+      ],
+      "label": "Wybór produktu",
+      "type": "select",
+      "id": "Field_1ib4ijd",
+      "key": "wybranyProdukt",
+      "description": "Wybierz produkt, który chcesz zamówić",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Liczba sztuk",
+      "type": "number",
+      "id": "Field_0066lt2",
+      "key": "liczbaSztuk",
+      "validate": {
+        "min": 1,
+        "max": 10,
+        "required": true
+      }
+    },
+    {
+      "text": "###  Proszę wybrać sposób dostawy produktu.",
+      "type": "text",
+      "id": "Field_0kt3h0s"
+    },
+    {
+      "values": [
+        {
+          "label": "Odbiór osobisty - 0 zł",
+          "value": "odbiorOsobisty"
+        },
+        {
+          "label": "Paczkomat - 10 zł",
+          "value": "paczkomat"
+        },
+        {
+          "label": "Kurier - 14 zł",
+          "value": "kurier"
+        }
+      ],
+      "label": "Sposób dostawy",
+      "type": "radio",
+      "id": "Field_1ivo8in",
+      "key": "sposobDostawy",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "text": "### Zmniejszenie śladu węglowego\nWybierając tą opcję wspierasz środowisko poprzez używanie opakowań z recyklingu.",
+      "type": "text",
+      "id": "Field_1xm4mz4"
+    },
+    {
+      "label": "Zmniejsz ślad węglowy",
+      "type": "checkbox",
+      "id": "Field_11ca4av",
+      "key": "sladWeglowy",
+      "description": "(+2 zł)"
+    },
+    {
+      "label": "Dodaktowa wiadomość do sprzedającego",
+      "type": "textfield",
+      "id": "Field_080jnn5",
+      "key": "field_0n5fzx1"
+    },
+    {
+      "action": "submit",
+      "label": "Złóż zamówienie",
+      "type": "button",
+      "id": "Field_1j62tdt",
+      "key": "field_1uzbo80"
+    },
+    {
+      "action": "reset",
+      "label": "Resetuj formularz",
+      "type": "button",
+      "id": "Field_04lz78x",
+      "key": "field_0i8jmg0"
+    }
+  ],
+  "type": "default",
+  "id": "formularzZamawianiaTowaru"
+}
