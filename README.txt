@@ -1,3 +1,14 @@
+-----
+The project contains the entire camunda server application and project files - it is ready to go.
+
+To start run start.bat (Windows) or start.sh (Linux).
+
+And find Camunda on: http://localhost:8080/camunda-welcome/index.html
+-----
+
+
+
+
 This is a distribution of
 
        Camunda Platform v7.16.0
